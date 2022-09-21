@@ -22,6 +22,20 @@ img {
     max-width: 100%;
 }
 
+/* #region Utilities */
+.d_flex {
+    display: flex;
+}
+
+.a_center {
+    align-items: center;
+}
+
+.f_end {
+    justify-content: flex-end;
+}
+/* #endregion Utilities */
+
 /* #region Debug */
 .debug .container_header {
     background-color: yellow;
@@ -46,6 +60,14 @@ img {
     height: 100px;
     width: 100%;
     position: fixed;
+}
+
+.upgrade {
+    background-color: var(--sf-dark-header);
+    color: var(--sf-light);
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--sf-light);
+    border-radius: 1rem;
 }
 
 .container_main {
