@@ -11,4 +11,59 @@
     --sf-dark-footer: #282828;
     --sf-btn-plylist: #A3A3A3;
     --sf-subtitle: #66696E;
+    --sf-light: #ffffff;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* #region Debug */
+.debug .container_header {
+    background-color: yellow;
+}
+
+.debug .container_main {
+    background-color: red;
+}
+
+.debug .side_bar {
+    background-color: blue;
+}
+
+.debug .container_footer {
+    background-color: black;
+}
+/* #endregion Debug */
+
+/* #region Body */
+.container_header {
+    /* background-color: var(--sf-dark-header); */
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+.container_main {
+    /* background-color: var(--sf-dark-bg); */
+    height: calc(100vh - 100px);
+}
+
+.side_bar {
+    /* background-color: var(--sf-dark-side); */
+    height: calc(100vh - 100px);
+    width: 230px;
+    position: relative;
+    z-index: 1000;
+}
+
+.container_footer {
+    /* background-color: var(--sf-dark-footer); */
+    height: 100px;
+}
+
+/* #endregion Body */
