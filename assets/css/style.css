@@ -94,25 +94,25 @@ ul {
     background-color: rgb(166, 0, 255);
 } */
 
-.debug .music {
+/* .debug .music {
     background-color: rgba(34, 0, 255, 0.683);
-}
+} */
 
-.debug .upgrade {
+/* .debug .upgrade {
     background-color: rgb(51, 153, 56);
-}
+} */
 
-.debug .content {
+/* .debug .content {
     background-color: rgb(153, 51, 116);
-}
+} */
 
-.debug .tracks {
+/* .debug .tracks {
     background-color: saddlebrown;
-}
+} */
 
-.debug .album {
+/* .debug .album {
     background-color: red;
-}
+} */
 
 .debug .footer {
     background-color: rgb(255, 247, 0);
@@ -145,11 +145,12 @@ ul {
 .side_bar {
     height: 100%;
     width: 50px;
+    background-color: var(--sf-dark-side);
     padding: 1rem;
 }
 
-h4, 
-h3:not(.playlist h3) {
+.side_bar h4, 
+.side_bar h3:not(.playlist h3) {
     color: var(--sf-subtitle);
 }
 
@@ -164,6 +165,7 @@ h3:not(.playlist h3) {
 
 .logo h2 {
     color: var(--sf-light);
+    font-size: 1.75rem;
 }
 
 .menu {
@@ -182,9 +184,18 @@ h3:not(.playlist h3) {
     gap: 0.25rem;
 }
 
+.playlist h3 {
+    color: var(--sf-light);
+}
+
 .setup_playlist {
     margin-top: 0.25rem;
     gap: 0.5rem;
+}
+
+.setup_playlist i {
+    color: var(--sf-light);
+    font-size: 2.75rem;
 }
 
 .name_playlist {
@@ -228,6 +239,7 @@ h3:not(.playlist h3) {
 
 .upgrade {
     height: 80px;
+    background-color: var(--sf-dark-header);
 }
 
 .btn {
@@ -242,6 +254,7 @@ h3:not(.playlist h3) {
 
 .content {
     height: calc(100% - 80px);
+    background-color: var(--sf-dark-bg);
     overflow-y: auto;
 }
 
