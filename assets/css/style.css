@@ -86,13 +86,13 @@ ul {
     background-color: rgb(0, 0, 0);
 }
 
-.debug .main {
+/* .debug .main {
     background-color: rgb(226, 171, 43);
-}
+} */
 
-.debug .side_bar {
+/* .debug .side_bar {
     background-color: rgb(166, 0, 255);
-}
+} */
 
 .debug .music {
     background-color: rgba(34, 0, 255, 0.683);
@@ -141,10 +141,16 @@ ul {
     display: flex;
 }
 
+/* Sidebar */
 .side_bar {
     height: 100%;
     width: 50px;
     padding: 1rem;
+}
+
+h4, 
+h3:not(.playlist h3) {
+    color: var(--sf-subtitle);
 }
 
 .logo {
@@ -153,6 +159,11 @@ ul {
 
 .logo img {
     width: 50px;
+    filter: invert(1);
+}
+
+.logo h2 {
+    color: var(--sf-light);
 }
 
 .menu {
@@ -165,23 +176,51 @@ ul {
     /* filter: invert(0.5); */
 }
 
-.home {
+.home, 
+.search, 
+.bookshelf {
     gap: 0.25rem;
+}
+
+.setup_playlist {
+    margin-top: 0.25rem;
+    gap: 0.5rem;
+}
+
+.name_playlist {
+    margin-top: 1rem;
+    line-height: 2rem;
 }
 
 .profile {
     height: 100%;
 }
 
+.install {
+    gap: 0.5rem;
+}
+
 .profile .icon_small {
     width: 20px;
-    /* filter: invert(0.5); */
+    filter: invert(0.5);
+}
+
+.profile hr {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.user {
+    gap: 0.5rem;
 }
 
 .profile .user_logo {
     width: 25px;
+    background-color: var(--sf-btn-plylist);
+    border-radius: 50%;
 }
 
+/* Music */
 .music {
     height: 100%;
     width: calc(100% - 50px);
@@ -233,6 +272,13 @@ ul {
     aspect-ratio: 1 / 1; 
     margin-bottom: 2rem;
 }
+
+.album h3 {
+    color: var(--sf-light);
+    padding: 1rem 0;
+}
+
+
 
 .circle {
     border-radius: 50%;
