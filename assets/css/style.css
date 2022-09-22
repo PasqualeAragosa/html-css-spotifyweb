@@ -27,11 +27,14 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
 /* #endregion Common */
@@ -128,6 +131,16 @@ a {
     height: 60px;
 }
 
+.btn {
+    background-color: var(--sf-dark-header);
+    color: var(--sf-light);
+    font-size: 0.75rem;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    border: 1px solid var(--sf-light);
+    border-radius: 1rem
+}
+
 .content {
     height: calc(100% - 60px);
     overflow-y: auto;
@@ -135,11 +148,30 @@ a {
 
 .tracks {
     width: 100%;
+    padding: 1rem;
+}
+
+.nav_bar li {
+    color: var(--sf-btn-plylist);
+    font-size: ;
+    padding: 1rem;
+}
+
+.tracks h2 {
+    color: var(--sf-light);
+    margin: 1rem 0;
+}
+
+.tracks .subtitle {
+    display: inline-block;
+    color: var(--sf-btn-plylist);
+    margin-bottom: 2rem;
 }
 
 .album {
     width: calc((100% / 12) * 6 - 1rem);
     aspect-ratio: 1 / 1; 
+    margin-bottom: 2rem;
 }
 
 .footer {
