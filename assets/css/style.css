@@ -61,20 +61,8 @@ a {
     text-align: center;
 }
 
-.col_2_lg {
-    width: calc((100% / 12) * 2 - 1rem);
-}
-
-.col_3_md {
-    width: calc((100% / 12) * 3 - 1rem);
-}
-
 .col_4 {
     width: calc((100% / 12) * 4);
-}
-
-.col_6_s {
-    width: calc((100% / 12) * 6 - 1rem);
 }
 /* #endregion Utilities */
 
@@ -92,15 +80,15 @@ a {
 }
 
 .debug .music {
-    background-color: rgba(166, 0, 255, 0.683);
+    background-color: rgba(34, 0, 255, 0.683);
 }
 
 .debug .upgrade {
-    background-color: rebeccapurple;
+    background-color: rgb(51, 153, 56);
 }
 
 .debug .content {
-    background-color: rgba(102, 51, 153, 0.692);
+    background-color: rgb(153, 51, 116);
 }
 
 .debug .tracks {
@@ -122,13 +110,13 @@ a {
 }
 
 .main {
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     display: flex;
 }
 
 .side_bar {
     height: 100%;
-    width: 230px;
+    width: 50px;
 }
 
 .music {
@@ -146,20 +134,46 @@ a {
 }
 
 .tracks {
-    height: 100%;
+    width: 100%;
 }
 
 .album {
-    width: calc((100% / 12) * 2 - 1rem);
+    width: calc((100% / 12) * 6 - 1rem);
     aspect-ratio: 1 / 1; 
 }
 
 .footer {
-    height: 100px;
+    height: 80px;
     display: flex;
 }
 /* #endregion Body */
 
 /* #region Query */
+@media screen and (min-width: 320px) {
+    .album {
+        width: calc((100% / 12) * 6 - 1rem);
+    }
+}
 
+@media screen and (min-width: 568px) {
+    .side_bar {
+        width: 230px;
+    }
+
+    .album {
+        width: calc((100% / 12) * 6 - 1rem);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .album {
+        width: calc((100% / 12) * 3 - 1rem);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .album {
+        width: calc((100% / 12) * 2 - 1rem);
+    }
+}
 /* #endregion Query */
