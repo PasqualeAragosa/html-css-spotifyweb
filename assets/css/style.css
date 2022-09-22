@@ -82,9 +82,9 @@ ul {
 /* #endregion Utilities */
 
 /* #region Debug */
-.debug .container {
+/* .debug .container {
     background-color: rgb(0, 0, 0);
-}
+} */
 
 /* .debug .main {
     background-color: rgb(226, 171, 43);
@@ -291,12 +291,11 @@ ul {
     padding: 1rem 0;
 }
 
-
-
 .circle {
     border-radius: 50%;
 }
 
+/* Footer */
 .footer {
     height: 80px;
     padding: 1rem;
@@ -308,12 +307,24 @@ ul {
     flex-grow: 1;
 }
 
+.playing {
+    gap: 1rem;
+}
+
+.playing_album {
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
 .playing img {
     width: 50px;
 }
- .controls {
+
+.controls {
     flex-grow: 4;
- }
+}
+
+
 /* #endregion Body */
 
 /* #region Query */
