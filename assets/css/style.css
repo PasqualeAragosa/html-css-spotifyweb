@@ -234,6 +234,10 @@ ul {
     margin-bottom: 2rem;
 }
 
+.circle {
+    border-radius: 50%;
+}
+
 .footer {
     height: 80px;
     padding: 1rem;
