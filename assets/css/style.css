@@ -56,6 +56,10 @@ ul {
     align-items: center;
 }
 
+.a_end {
+    align-items: flex-end;
+}
+
 .f_center {
     justify-content: center;
 }
@@ -131,13 +135,44 @@ ul {
     gap: 0.25rem;
 }
 
+.logo img {
+    width: 50px;
+}
+
+.menu {
+    margin: 1.5rem 0;
+    line-height: 2.5rem;
+}
+
+.icon {
+    width: 30px;
+    /* filter: invert(0.5); */
+}
+
+.home {
+    gap: 0.25rem;
+}
+
+.profile {
+    height: 100%;
+}
+
+.profile .icon_small {
+    width: 20px;
+    /* filter: invert(0.5); */
+}
+
+.profile .user_logo {
+    width: 25px;
+}
+
 .music {
     height: 100%;
     width: calc(100% - 50px);
 }
 
 .upgrade {
-    height: 60px;
+    height: 80px;
 }
 
 .btn {
@@ -151,7 +186,7 @@ ul {
 }
 
 .content {
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
     overflow-y: auto;
 }
 
