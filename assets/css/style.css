@@ -324,6 +324,21 @@ ul {
     flex-grow: 4;
 }
 
+.controls_top {
+    gap: 1rem;
+}
+
+.controls_top i {
+    font-size: 1.25rem;
+}
+
+.controls_top .fa-circle-play {
+    font-size: 2.25rem;
+}
+
+.bar_duration {
+    border: 1px solid var(--sf-btn-plylist);
+}
 
 /* #endregion Body */
 
