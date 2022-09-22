@@ -48,6 +48,10 @@ ul {
     flex-wrap: wrap;
 }
 
+.f_column {
+    flex-direction: column;
+}
+
 .a_center {
     align-items: center;
 }
@@ -120,11 +124,16 @@ ul {
 .side_bar {
     height: 100%;
     width: 50px;
+    padding: 1rem;
+}
+
+.logo {
+    gap: 0.25rem;
 }
 
 .music {
     height: 100%;
-    width: 100%;
+    width: calc(100% - 50px);
 }
 
 .upgrade {
@@ -190,6 +199,10 @@ ul {
 @media screen and (min-width: 568px) {
     .side_bar {
         width: 230px;
+    }
+
+    .music {
+        width: calc(100% - 230px);
     }
 
     .album {
