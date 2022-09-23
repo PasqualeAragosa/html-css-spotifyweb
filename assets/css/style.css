@@ -252,6 +252,10 @@ ul {
     filter: invert(0.5);
 }
 
+.install a:hover {
+    color: var(--sf-light);
+}
+
 .profile hr {
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
@@ -396,8 +400,21 @@ ul {
     color: var(--sf-btn-plylist);
 }
 
-.details a {
+.playing i:hover {
     color: var(--sf-light);
+}
+
+.details h3 {
+    color: var(--sf-light);
+}
+
+.details a {
+    color: var(--sf-btn-plylist);
+}
+
+.details a:hover {
+    color: var(--sf-light);
+    text-decoration: underline;
 }
 
 .details h6 {
@@ -413,11 +430,15 @@ ul {
 }
 
 .controls_top i {
-    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
+.btn_play {
+    margin: 0 1rem;
 }
 
 .controls_top .fa-circle-play {
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 .controls_bottom {
@@ -434,11 +455,36 @@ ul {
     background-color: var(--sf-btn-plylist);
     width: 100%;
     border-radius: 1rem;
+    position: relative;
 }
 
 .progress {
     border: 1px solid var(--sf-light);
     width: 30%;
+}
+
+.bar_duration:hover .progress{
+    border: 1px solid rgb(155, 251, 10);
+}
+
+.bullet {
+    background-color: var(--sf-light);
+    border: 1px solid var(--sf-light);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    bottom: -6px;
+    display: none;
+}
+
+.bar_duration:hover .bullet {
+    display: inline-block;
+}
+
+.seconds {
+    font-size: 0.75rem;
 }
 
 .audio {
