@@ -240,6 +240,7 @@ ul {
 .upgrade {
     height: 80px;
     background-color: var(--sf-dark-header);
+    opacity: 0.1;
 }
 
 .btn {
@@ -325,6 +326,18 @@ ul {
 
 .playing img {
     width: 50px;
+}
+
+.playing i {
+    color: var(--sf-btn-plylist);
+}
+
+.details a {
+    color: var(--sf-light);
+}
+
+.details h6 {
+    color: var(--sf-btn-plylist);
 }
 
 .controls {
