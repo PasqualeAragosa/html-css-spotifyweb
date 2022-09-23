@@ -52,6 +52,10 @@ ul {
     flex-direction: column;
 }
 
+.f_row {
+    flex-direction: row;
+}
+
 .s_around {
     justify-content: space-around;
 }
@@ -156,9 +160,8 @@ ul {
     overflow: hidden;
 }
 
-.side_bar h4,
-.side_bar h3:not(.playlist h3) {
-    color: var(--sf-subtitle);
+.side_bar a {
+    color: var(--sf-btn-plylist);
 }
 
 .logo {
@@ -180,6 +183,22 @@ ul {
     line-height: 2.5rem;
 }
 
+.menu a:hover {
+    color: var(--sf-light);
+}
+
+.home img,
+.search img,
+.bookshelf img {
+    filter: invert(0.5);
+}
+
+.home:hover,
+.search:hover,
+.bookshelf:hover {
+    filter: invert(0);
+}
+
 .icon {
     width: 30px;
 }
@@ -196,16 +215,14 @@ ul {
 
 .setup_playlist {
     margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .setup_playlist i {
     color: var(--sf-btn-plylist);
     font-size: 2.75rem;
-}
-
-.setup_playlist a {
-    color: var(--sf-btn-plylist);
-    height: 100%;
 }
 
 .name_playlist {
@@ -214,7 +231,6 @@ ul {
 }
 
 .name_playlist a {
-    color: var(--sf-btn-plylist);
     display: inline-block;
 }
 
@@ -289,6 +305,10 @@ ul {
     color: var(--sf-btn-plylist);
     font-size: ;
     padding: 1rem;
+}
+
+.nav_bar li:hover {
+    color: var(--sf-light);
 }
 
 .tracks h2 {
