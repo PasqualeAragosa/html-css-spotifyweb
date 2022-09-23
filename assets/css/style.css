@@ -195,18 +195,32 @@ ul {
 }
 
 .setup_playlist {
-    margin-top: 0.25rem;
-    gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .setup_playlist i {
-    color: var(--sf-light);
+    color: var(--sf-btn-plylist);
     font-size: 2.75rem;
+}
+
+.setup_playlist a {
+    color: var(--sf-btn-plylist);
+    height: 100%;
 }
 
 .name_playlist {
     margin-top: 1rem;
     line-height: 2rem;
+}
+
+.name_playlist a {
+    color: var(--sf-btn-plylist);
+    display: inline-block;
+}
+
+.name_playlist a:hover,
+.setup_playlist a:hover {
+    color: var(--sf-light);
 }
 
 .profile {
