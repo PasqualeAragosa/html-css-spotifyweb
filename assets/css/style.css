@@ -307,8 +307,13 @@ ul {
 
 .nav_bar li {
     color: var(--sf-btn-plylist);
-    font-size: ;
     padding: 1rem;
+}
+
+.underline {
+    margin-top: 0.5rem;
+    border: 1px solid greenyellow;
+    width: 50%;
 }
 
 .nav_bar li:hover {
