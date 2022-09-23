@@ -281,7 +281,10 @@ ul {
 .upgrade {
     height: 80px;
     background-color: var(--sf-dark-header);
-    /* opacity: 0.1; */
+}
+
+.upgrade span:hover {
+    font-size: 15px;
 }
 
 .btn {
