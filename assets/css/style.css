@@ -235,7 +235,8 @@ ul {
 }
 
 .name_playlist a:hover,
-.setup_playlist a:hover {
+.setup_playlist:hover a,
+.setup_playlist:hover i {
     color: var(--sf-light);
 }
 
