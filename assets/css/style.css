@@ -215,8 +215,6 @@ ul {
 
 .setup_playlist {
     margin-top: 0.5rem;
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
 }
 
@@ -512,9 +510,11 @@ ul {
         display: none;
     }
 
+    .menu,
     .playlist,
     .setup_playlist,
-    .name_playlist {
+    .name_playlist,
+    .profile {
         display: none;
     }
 
@@ -528,9 +528,7 @@ ul {
         display: none;
     }
 
-    .icon {
-        display: inline-block;
-    }
+
 
     .album {
         width: calc((100% / 12) * 6 - 1rem);
@@ -546,10 +544,13 @@ ul {
         display: inline-block;
     }
 
+    .menu,
     .playlist,
     .setup_playlist,
-    .name_playlist {
-        display: inline-block;
+    .name_playlist,
+    .profile {
+        display: flex;
+        flex-direction: column;
     }
 
     .logo .big_logo {
